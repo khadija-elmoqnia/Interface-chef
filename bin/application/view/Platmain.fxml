@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="979.0" style="-fx-background-color: #ebf7ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Platmain">
+   <children>
+      <TableView fx:id="table" layoutX="41.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="895.0" stylesheets="@service.css">
+        <columns>
+          <TableColumn id="coloneNomplat" fx:id="columnNamplat" minWidth="-1.0" prefWidth="108.0" text="Nom du plat" />
+          <TableColumn fx:id="columncategori" prefWidth="96.0" text="Catégorie" />
+            <TableColumn fx:id="columndesc" prefWidth="166.0" text="Description" />
+            <TableColumn fx:id="columnprix" prefWidth="75.0" text="Prix" />
+            <TableColumn fx:id="columnspromo" prefWidth="123.0" text="Promotion" />
+            <TableColumn fx:id="columnmodifier" prefWidth="123.0" text="Modifier" />
+            <TableColumn fx:id="columnsupprimer" prefWidth="123.0" text="Supprimer" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <HBox layoutX="682.0" layoutY="570.0" prefHeight="100.0" prefWidth="200.0" />
+      <HBox layoutX="236.0" layoutY="538.0" prefHeight="45.0" prefWidth="534.0">
+         <children>
+            <Button fx:id="addplat" alignment="CENTER" mnemonicParsing="false" onAction="#addplat" prefHeight="36.0" prefWidth="84.0" stylesheets="@service.css" text="Ajouter Plat" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="refresh" alignment="CENTER" mnemonicParsing="false" onAction="#initialize" prefHeight="36.0" prefWidth="107.0" stylesheets="@service.css" text="Rafraîchir" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Text fill="#032c47" fontSmoothingType="LCD" layoutX="99.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details des Plats">
+         <font>
+            <Font name="Elephant" size="37.0" />
+         </font>
+      </Text>
+      <Pane layoutX="10.0" layoutY="68.0" prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: #032c47;" AnchorPane.bottomAnchor="596.4" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0" />
+      <Pane layoutY="75.0" prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: #032c47;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
+      <ImageView fitHeight="45.0" fitWidth="46.0" layoutX="41.0" layoutY="17.0" onMouseClicked="#retourner" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/retourner.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

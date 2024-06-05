@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="979.0" style="-fx-background-color: #ebf7ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PromotionController">
+    <children>
+      <Text fill="#032c47" layoutX="91.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Réglages de promotion">
+         <font>
+            <Font name="Elephant" size="37.0" />
+         </font>
+      </Text>
+        <VBox layoutX="39.0" layoutY="172.0" prefHeight="273.0" prefWidth="170.0" spacing="12.0" styleClass="Vbox">
+            <children>
+                <Text fill="#032c47" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Date début" />
+                <DatePicker fx:id="fdatedeb" prefHeight="26.0" prefWidth="194.0" styleClass="spinn" />
+                <Text fill="#032c47" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Date fin" />
+                <DatePicker fx:id="fdatefin" prefHeight="26.0" prefWidth="191.0" styleClass="spinn" />
+                <Text fill="#032c47" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Pourcentage de la promotion " />
+                <TextField fx:id="fpourprom" prefWidth="126.0" styleClass="fcodeprom" />
+                <Text fill="#032c47" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Code Promo" />
+                <TextField fx:id="fcodeprom" prefWidth="126.0" styleClass="fcodeprom" />
+            </children>
+        </VBox>
+        <TableView fx:id="table" layoutX="282.0" layoutY="146.0" onMouseClicked="#getData" prefHeight="340.0" prefWidth="683.0" styleClass="tablee" stylesheets="@promo.css">
+            <columns>
+                <TableColumn fx:id="colNompl" prefWidth="132.80006408691406" styleClass="col" text="Nom Plat" />
+                <TableColumn fx:id="coldtdeb" prefWidth="83.20001220703125" styleClass="col" text="Date début" />
+                <TableColumn fx:id="coldtfin" prefWidth="89.5999755859375" styleClass="col" text="Date fin" />
+                <TableColumn fx:id="colpourprix" prefWidth="95.20001220703125" styleClass="col" text="\% de la Promo" />
+                <TableColumn fx:id="colprixorg" minWidth="0.0" prefWidth="94.39996337890625" styleClass="col" text="Prix original" />
+                <TableColumn fx:id="colcodepromo" prefWidth="92.79998779296875" styleClass="col" text="Code Promo" />
+            	<TableColumn fx:id="colnouvprix" prefWidth="91.79998779296875" styleClass="col" text="Nouveau prix" />
+            </columns>
+        </TableView>
+        <ButtonBar fx:id="buttonbar" layoutX="348.0" layoutY="507.0" prefHeight="40.0" prefWidth="561.0" styleClass="@promo.css">
+            <buttons>
+                <Button fx:id="button1" mnemonicParsing="false" onAction="#createPromotion" styleClass="button" stylesheets="@promo.css" text="Ajouter" />
+                <Button fx:id="button3" mnemonicParsing="false" onAction="#deletePromotion" prefWidth="149.0" styleClass="button" stylesheets="@promo.css" text="Supprimer" />
+                <Button fx:id="button2" mnemonicParsing="false" onAction="#updatePromotion" styleClass="button" stylesheets="@promo.css" text="Modifier" />
+            </buttons>
+        </ButtonBar>
+      <ButtonBar layoutX="27.0" layoutY="507.0" prefHeight="40.0" prefWidth="182.0">
+         <buttons>
+          <Button fx:id="effacer" mnemonicParsing="false" onAction="#effacer" styleClass="button" stylesheets="@promo.css" text="Effacer" />
+         </buttons>
+      </ButtonBar>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="887.0" layoutY="88.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/refresh.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="39.0" layoutY="8.0" onMouseClicked="#retourner" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/retourner.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="59.0" prefHeight="6.0" prefWidth="979.0" style="-fx-background-color: #032c47;" />
+    </children>
+</Pane>

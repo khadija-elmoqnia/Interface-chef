@@ -1,0 +1,57 @@
+.btn:hover {
+    -fx-cursor: hand;
+}
+
+.table-view {
+    -fx-background-color: linear-gradient(to right, #0A3353, #016A91);
+    -fx-background-radius: 14 14 0 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to right, #0A3353, #016A91);
+    -fx-background-radius: 14;
+    -fx-background-insets: 0 0 10 0;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-size: 50px;
+    -fx-border-width: 0 0 10 0;
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-pref-width: 240px;
+    -fx-pref-height: 30px;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box,#AAAAAA, 3, 0,0,3);
+}
+
+.text-area {
+     -fx-font-size: 14px;
+    -fx-pref-width: 240px;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box,#AAAAAA, 3, 0,0,3);
+}
+
+/* Styling for Buttons inside ButtonBar */
+.button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 800px;
+    -fx-pref-height: 30px;
+    -fx-background-color: linear-gradient(to right, #0A3353, #016A91);
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+    -fx-text-fill: white;
+    -fx-font-family: "Calibri Light";
+}
+
+/* Hover effect for Buttons */
+.button:hover {
+    -fx-background-color: #005F7F;
+}
+

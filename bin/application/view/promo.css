@@ -1,0 +1,96 @@
+/* Styling for Spinner */
+.form fpourprom {
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+}
+
+.form fprixorg {
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+}
+
+
+/* Styling for DatePicker */
+.spinn .date-picker-popup {
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-pref-width: 10px; /* Largeur préférée */
+    /* Autres styles souhaités */
+}
+
+/* Styling for TextField */
+.fcodeprom {
+    -fx-font-size: 14px;
+    -fx-pref-width: 175px;
+    -fx-pref-height: 30px;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box,#AAAAAA, 3, 0,0,3);
+
+}
+.title{
+    -fx-font-weight: bold;
+
+}
+
+.Vbox{
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #032c47;
+    -fx-padding: 10;
+}
+
+
+.cont{
+    -fx-background-color: linear-gradient(to top, #FFFFFF, #28a4c5, #27839c,#28a4c5, #FFFFFF);
+}
+
+.date-picker-popup {
+    -fx-pref-width: 10px; /* Adjust the width of the calendar */
+    -fx-pref-height: 200px; /* Adjust the height of the calendar */
+}
+
+/* Styling for ButtonBar */
+.buttonbar {
+    -fx-pref-width: 350px;
+    -fx-spacing: 100px;
+}
+
+/* Styling for Buttons inside ButtonBar */
+.button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 800px;
+    -fx-pref-height: 30px;
+    -fx-background-color: linear-gradient(to right, #0A3353, #016A91);
+    -fx-effect: dropshadow(three-pass-box,#AAAAAA, 3, 0,0,3);
+    -fx-text-fill: white;
+    -fx-font-family: "Calibri Light";
+}
+
+/* Hover effect for Buttons */
+.button:hover {
+    -fx-background-color: #005F7F;
+
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to right, #0A3353, #016A91);
+    -fx-background-insets: 0 0 10 0;
+    -fx-background-radius:14;
+
+
+
+}
+.table-view .column-header, .table-view .filler{
+    -fx-size:45px;
+    -fx-border-width: 0 0 10 0;
+    -fx-background-color:transparent;
+
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white ;
+}
+
+.table-view {
+    -fx-background-color: linear-gradient(to right, #0A3353, #016A91);
+    -fx-background-radius: 14 14 0 0;
+
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="979.0" style="-fx-background-color: #ebf7ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.mainapplicationController">
+   <children>
+      <Pane layoutX="490.0" layoutY="101.0" prefHeight="382.0" prefWidth="410.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Text fill="#032c47" layoutX="14.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérez votre liste de plats" textAlignment="JUSTIFY" wrappingWidth="223.73667907714844">
+               <font>
+                  <Font name="Elephant" size="18.0" />
+               </font>
+            </Text>
+            <HBox layoutX="115.0" layoutY="89.0" prefHeight="45.0" prefWidth="200.0" stylesheets="@service.css">
+               <children>
+                  <Button fx:id="platId" mnemonicParsing="false" onAction="#PlatButoon" prefHeight="41.0" prefWidth="246.0" text="Plat" />
+               </children>
+            </HBox>
+            <Text fill="#032c47" layoutX="15.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Élaborez des menus personnalisés" textAlignment="JUSTIFY" wrappingWidth="355.7367401123047">
+               <font>
+                  <Font name="Elephant" size="18.0" />
+               </font>
+            </Text>
+            <HBox layoutX="115.0" layoutY="204.0" prefHeight="45.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Menuid" mnemonicParsing="false" onAction="#Menubtn" prefHeight="72.0" prefWidth="142.0" stylesheets="@service.css" text="Menu" />
+               </children>
+            </HBox>
+            <Text fill="#032c47" layoutX="15.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Proposez des services complémentaires" textAlignment="JUSTIFY" wrappingWidth="355.7367401123047">
+               <font>
+                  <Font name="Elephant" size="18.0" />
+               </font>
+            </Text>
+            <HBox layoutX="115.0" layoutY="313.0" prefHeight="45.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="serviceId" mnemonicParsing="false" onAction="#Servicebtn" prefHeight="72.0" prefWidth="142.0" stylesheets="@service.css" text="Service" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="324.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pizza.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="39.0" layoutX="65.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/menu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="39.0" layoutX="65.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/plat.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="39.0" layoutX="65.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cloche.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="592.0" fitWidth="518.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backgroung.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="#032c47" layoutX="59.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Bienvenue sur le tableau de bord fournisseur de notre système. Cette plateforme vous permet de gérer efficacement votre catalogue de produits, vos promotions, vos menus et de proposer d'autres services. Simplifiez vos opérations avec notre interface conviviale et intuitive, conçue spécialement pour répondre à vos besoins en tant que fournisseur." textAlignment="CENTER" wrappingWidth="256.53673934936523">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
